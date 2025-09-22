@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logistics Page</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="sl.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+        <a href="#">
+          <img src="Imgaes/website-logo.jpeg" alt="Firstbase Global Service" height="90px" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+        <ul class="navbar-nav gap-2 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu" aria-labelledby="pagesDrop">
+                    <li><a class="dropdown-item" href="#services">Transportaion Services</a></li>
+                    <li><a class="dropdown-item" href="#services">WareHousing Services</a></li>
+                    <li><a class="dropdown-item" href="#services">Supply Chain Services</a></li>
+                    <li><a class="dropdown-item" href="#services">Reverse Logistics Services</a></li>
+                    <li><a class="dropdown-item" href="#services">Courier Services</a></li>
+                    <li><a class="dropdown-item" href="#services">E-Commerce Services</a></li>
+                    <li><a class="dropdown-item" href="#services">Goods Services</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item d-none d-lg-block"><a class="btn btn-outline-secondary" href="#contact">Hire me</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+
+  <!-- Main carousel (Home) -->
+  <section id="top" class="page-section">
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h3>Fast &amp; Reliable <em>Transportation</em> Solutions</h3>
+                  <div class="div-dec"></div>
+                  <p>We ensure safe, on-time delivery of goods across cities, states, and international borders with complete visibility.</p>
+                  <div class="mt-3">
+                    <span class="green-button me-2"><a href="#our-services" class="text-white text-decoration-none">Discover More</a></span>
+                    <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+                  </div>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h3>Secure &amp; Scalable <em>Warehousing</em></h3>
+                  <div class="div-dec"></div>
+                  <p>Our strategically located warehouses provide efficient storage, inventory control, and faster order fulfillment.</p>
+                  <div class="mt-3">
+                    <span class="green-button me-2"><a href="#services" class="text-white text-decoration-none">Discover More</a></span>
+                    <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h3>Streamlined <em>Supply Chain</em> Management</h3>
+                  <div class="div-dec"></div>
+                  <p>From sourcing to delivery, we optimize the entire supply chain process to reduce costs and improve efficiency.</p>
+                  <div class="mt-3">
+                    <span class="green-button me-2"><a href="#about" class="text-white text-decoration-none">Discover More</a></span>
+                    <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/transportation.jpeg" alt="Transportaion">
+            <h4>Transportaion Services</h4>
+            <p>Fast, safe, and reliable movement of goods across locations.</p>
+            <a href="#permanent" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/warehousing.jpeg" alt="warehousing">
+            <h4>WareHousing Services</h4>
+            <p>Secure storage with inventory management for smooth operations.</p>
+            <a href="#contract" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/supply chain.jpeg" alt="Supply chain">
+            <h4>Supply Chain Services</h4>
+            <p>End-to-end solutions to streamline your business supply chain.</p>
+            <a href="#temporary" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/reverse logistics.jpeg" alt="Reverse Logistics">
+            <h4>Reverse Logistics Services</h4>
+            <p>OHassle-free product returns, repairs, and replacements.</p>
+            <a href="#it-staffing" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/courier.jpeg" alt="Courier">
+            <h4>Courier Services</h4>
+            <p>Quick and affordable delivery for parcels and documents.</p>
+            <a href="#healthcare" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/ecommerece.jpeg" alt="E Commerce">
+            <h4>E-Commerce Services</h4>
+            <p>Tailored logistics support for online retailers and marketplaces.</p>
+            <a href="#retail" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/Goods.jpeg" alt="Goods">
+            <h4>Goods Services</h4>
+            <p>Efficient handling and distribution of all types of goods.</p>
+            <a href="#retail" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simple CTA -->
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <h4>Reliable <em>Logistics Solutions</em> for <strong>Your Business</strong></h4>
+        </div>
+        <div class="col-lg-7 text-lg-end">
+          <div class="buttons">
+            <span class="green-button me-2"><a href="#our-services" class="text-white text-decoration-none">Discover More</a></span>
+            <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="page-section py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Left Content -->
+        <div class="col-lg-8">
+          <div class="section-heading mb-4">
+            <h6 class="text-uppercase text-muted">About Us</h6>
+            <h4 class="fw-bold">Driving Growth with Seamless Logistics & Supply Chain Services</h4>
+          </div>
+
+          <div class="naccs">
+            <!-- Tabs -->
+            <div class="menu d-flex flex-wrap gap-2 mb-3" id="aboutTabs">
+              <div class="gradient-border active px-3 py-2 rounded" data-tab="tab1">
+                <span>Transportation</span>
+              </div>
+              <div class="gradient-border px-3 py-2 rounded" data-tab="tab2">
+                <span>Warehousing</span>
+              </div>
+              <div class="gradient-border px-3 py-2 rounded" data-tab="tab3">
+                <span>Supply Chain</span>
+              </div>
+            </div>
+
+            <!-- Tab Content -->
+            <ul class="nacc list-unstyled" id="aboutContent">
+
+              <!-- Payroll Processing -->
+              <li id="tab1" class="tab-pane">
+                <div class="main-list d-none d-md-flex justify-content-between fw-bold border-bottom pb-2 mb-2">
+                  <span>Service</span>
+                  <span>Coverage</span>
+                  <span>Frequency</span>
+                  <span>Clients</span>
+                </div>
+
+                <div class="list-item border-bottom py-3">
+                  <div class="d-flex justify-content-between d-none d-md-flex">
+                    <span>Goods Transport</span>
+                    <span>Local & Nationwide</span>
+                    <span>Daily</span>
+                    <span>RetailMax</span>
+                  </div>
+                  <div class="d-block d-md-none small">
+                    <p class="mb-1"><strong>Service:</strong> Goods Transport</p>
+                    <p class="mb-1"><strong>Scope:</strong> Local & Nationwide</p>
+                    <p class="mb-1"><strong>Frequency:</strong> Daily</p>
+                    <p class="mb-0"><strong>Clients:</strong> RetailMax</p>
+                  </div>
+                </div>
+
+                <div class="list-item border-bottom py-3">
+                  <div class="d-flex justify-content-between d-none d-md-flex">
+                    <span>Courier Services</span>
+                    <span>Documents & Parcels</span>
+                    <span>On-Demand</span>
+                    <span>BizConnect</span>
+                  </div>
+                  <div class="d-block d-md-none small">
+                    <p class="mb-1"><strong>Service:</strong> Courier Services</p>
+                    <p class="mb-1"><strong>Scope:</strong> Documents & Parcels</p>
+                    <p class="mb-1"><strong>Frequency:</strong> On-Demand</p>
+                    <p class="mb-0"><strong>Clients:</strong> BizConnect</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Compliance & Audit -->
+              <li id="tab2" class="tab-pane d-none">
+                <div class="main-list d-none d-md-flex justify-content-between fw-bold border-bottom pb-2 mb-2">
+                  <span>Service</span>
+                  <span>Scope</span>
+                  <span>Frequency</span>
+                  <span>Clients</span>
+                </div>
+
+                <div class="list-item py-3">
+                  <div class="d-flex justify-content-between d-none d-md-flex">
+                    <span>Inventory Management</span>
+                    <span>Secure Warehousing</span>
+                    <span>Ongoing</span>
+                    <span>E-Shopper</span>
+                  </div>
+                  <div class="d-block d-md-none small">
+                    <p class="mb-1"><strong>Service:</strong> Inventory Managemen</p>
+                    <p class="mb-1"><strong>Focus:</strong> Secure Warehousing</p>
+                    <p class="mb-1"><strong>Frequency:</strong> Ongoing</p>
+                    <p class="mb-0"><strong>Clients:</strong> E-Shopper</p>
+                  </div>
+                </div>
+
+                <div class="list-item py-3">
+                  <div class="d-flex justify-content-between d-none d-md-flex">
+                    <span>Cold Storage</span>
+                    <span>Perishable Goods</span>
+                    <span>Ongoing</span>
+                    <span>AgriFresh</span>
+                  </div>
+                  <div class="d-block d-md-none small">
+                    <p><strong>Service:</strong> Cold Storage</p>
+                    <p><strong>Scope:</strong> Perishable Goods</p>
+                    <p><strong>Frequency:</strong> Ongoing</p>
+                    <p><strong>Clients:</strong> AgriFresh</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- HR Outsourcing -->
+              <li id="tab3" class="tab-pane d-none">
+                <div class="main-list d-none d-md-flex justify-content-between fw-bold border-bottom pb-2 mb-2">
+                  <span>Service</span>
+                  <span>Focus</span>
+                  <span>Frequency</span>
+                  <span>Clients</span>
+                </div>
+
+                <div class="list-item py-3">
+                  <div class="d-flex justify-content-between d-none d-md-flex">
+                    <span>Supply Chain Solutions</span>
+                    <span>End-to-End Logistics</span>
+                    <span>Project-Based</span>
+                    <span>GlobalTrade Inc.</span>
+                  </div>
+                  <div class="d-block d-md-none small">
+                    <p class="mb-1"><strong>Service:</strong> Supply Chain Solutions</p>
+                    <p class="mb-1"><strong>Type:</strong> End-to-End Logistics</p>
+                    <p class="mb-1"><strong>Scope:</strong> Project-Based</p>
+                    <p class="mb-0"><strong>Clients:</strong> GlobalTrade Inc.</p>
+                  </div>
+                </div>
+
+                <div class="list-item py-3">
+                  <div class="d-flex justify-content-between d-none d-md-flex">
+                    <span>Reverse Logistics</span>
+                    <span>Returns & Replacements</span>
+                    <span>On-Demand</span>
+                    <span>ShopEase</span>
+                  </div>
+                  <div class="d-block d-md-none small">
+                    <p class="mb-1"><strong>Service:</strong> Reverse Logistics</p>
+                    <p class="mb-1"><strong>Type:</strong> Returns & Replacements</p>
+                    <p class="mb-1"><strong>Scope:</strong> On-Demand</p>
+                    <p class="mb-0"><strong>Clients:</strong> ShopEase</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-lg-4">
+          <div class="right-content p-4 bg-white rounded shadow-sm h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="fw-bold mb-3">Partner with Us for Logistics Excellence</h4>
+              <p class="text-muted">
+                We provide reliable transportation, secure warehousing, and end-to-end supply chain management solutions that ensure your goods move seamlessly while reducing costs and improving efficiency.
+              </p>
+            </div>
+            <div>
+              <a href="#contact" class="btn btn-success w-100">Discover More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Our Services (detailed) -->
+  <section id="our-services" class="page-section py-5 bg-light">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="fw-bold">Our Capabilities</h2>
+          <div class="div-dec mx-auto my-3"></div>
+        </div>
+      </div>
+    
+      <!-- Service 1 -->
+      <div class="service-item mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h4 class="fw-bold mb-3">Transportation Services</h4>
+            <p class="text-muted">
+              Reliable and cost-effective transportation solutions for smooth movement of goods across cities, states, and international borders.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Service 2 -->
+      <div class="service-item mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h4 class="fw-bold mb-3">Warehousing Services</h4>
+            <p class="text-muted">
+              Secure, scalable, and strategically located warehouses to ensure efficient inventory management and timely order fulfillment.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Service 3 -->
+      <div class="service-item mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h4 class="fw-bold mb-3">Supply Chain Services</h4>
+            <p class="text-muted">
+              End-to-end supply chain management ensuring faster delivery, optimized costs, and complete visibility at every stage.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Service 4 -->
+      <div class="service-item mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h4 class="fw-bold mb-3">Reverse Logistics</h4>
+            <p class="text-muted">
+              Hassle-free product returns, recycling, and disposal solutions to enhance customer satisfaction and sustainability goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  
+  <!-- Logistics Inquiry Form -->
+  <section class="page-section py-5 d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="section-heading text-center mb-4">
+            <h6>Your Logistics Partner</h6>
+            <h4>Get a Logistics  Service</h4>
+          </div>
+        
+          <form id="calculate" onsubmit="event.preventDefault(); alert('Form submitted (demo).');">
+            <div class="mb-2">
+              <label for="cName" class="form-label">Your Name</label>
+              <input id="cName" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label for="cEmail" class="form-label">Your Email</label>
+              <input id="cEmail" class="form-control" type="email" required>
+            </div>
+            <div class="mb-2">
+              <label for="cSubject" class="form-label">Subject</label>
+              <input id="cSubject" class="form-control">
+            </div>
+            <div class="mb-2">
+              <label for="chooseOption" class="form-label">Your Requirement</label>
+              <select id="chooseOption" class="form-select">
+                <option>Choose an Option</option>
+                <option>Transportation Services</option>
+                <option>Warehousing Services</option>
+                <option>Supply Chain Services</option>
+                <option>Reverse Logistics Services</option>
+                <option>Courier Services</option>
+                <option>E-Commerce Logistics</option>
+                <option>Goods Delivery</option>
+              </select>
+            </div>
+            <button class="orange-button mt-2" type="submit">Submit Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials -->
+  <section id="testimonials" class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 text-center mb-4">
+          <h6>Testimonials</h6>
+          <h4>What Our Clients Say</h4>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="d-flex gap-3 flex-column flex-md-row">
+            
+            <div class="owl-testimonials item p-3">
+              <i class="fa fa-quote-left fa-2x mb-2 text-muted"></i>
+              <p>“Their transportation services are always on time and cost-efficient. It has streamlined our nationwide delivery operations.”</p>
+              <h5 class="mb-0">Suresh Iyer</h5>
+              <small class="text-muted">Logistics Head, RetailMart</small>
+            </div>
+          
+            <div class="owl-testimonials item p-3">
+              <i class="fa fa-quote-left fa-2x mb-2 text-muted"></i>
+              <p>“We’ve been using their warehousing solutions for over a year. Inventory is well managed and delivery speed has improved.”</p>
+              <h5 class="mb-0">Meena Kapoor</h5>
+              <small class="text-muted">CEO, QuickShop E-Com</small>
+            </div>
+          
+            <div class="owl-testimonials item p-3">
+              <i class="fa fa-quote-left fa-2x mb-2 text-muted"></i>
+              <p>“Their supply chain expertise and reverse logistics support have helped us reduce costs while improving customer experience.”</p>
+              <h5 class="mb-0">Arvind Menon</h5>
+              <small class="text-muted">COO, FreshFoods Pvt. Ltd.</small>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h2>Contact Us</h2>
+          <div class="div-dec" style="margin:0.5rem auto"></div>
+        </div>
+
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="info-item p-3 bg-white rounded">
+                <i class="fa fa-envelope fa-lg text-muted"></i>
+                <h5 class="mt-2">Email Address</h5>
+                <a href="mailto:info@company.com">info@firstbaseglobalservice.com</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-item p-3 bg-white rounded">
+                <i class="fa fa-phone fa-lg text-muted"></i>
+                <h5 class="mt-2">Phone Number</h5>
+                <a href="tel:6281815623">6281815623</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-item p-3 bg-white rounded">
+                <i class="fa fa-map-marked-alt fa-lg text-muted"></i>
+                <h5 class="mt-2">Address</h5>
+                <span>Plot no 486/B, opposite sbi bank, 9th Phase, K P H B Phase 9, Kukatpally, Hyderabad, Telangana 500072</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-us-form mt-4 p-4 bg-white rounded">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3 text-center mb-3">
+                <h4>Feel free to message us</h4>
+              </div>
+
+              <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent (demo)');" class="row">
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Your Name..." required></div>
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Your Phone..." required></div>
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Your E-mail..." type="email" required></div>
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Subject..."></div>
+                <div class="col-12 mb-2"><textarea class="form-control" placeholder="Your Message"></textarea></div>
+                <div class="col-12 text-center"><button class="orange-button" type="submit">Send Message</button></div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>© <span id="year"></span> Firstbase Global Service — Employment Services and Software Development</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + dependencies (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle?.addEventListener('click', () => {
+      if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+        mobileNav.style.display = 'block';
+      } else {
+        mobileNav.style.display = 'none';
+      }
+    });
+
+    // Simple about tabs switching (works without third-party)
+    document.querySelectorAll('#aboutTabs .gradient-border').forEach(tab => {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('#aboutTabs .gradient-border').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        document.querySelectorAll('#aboutContent li').forEach(c => c.classList.add('d-none'));
+        document.getElementById(this.getAttribute('data-tab')).classList.remove('d-none');
+      });
+    });
+
+    // Minimal accordion behavior for any .accordion-card used
+    document.querySelectorAll('.accordion-card .accordion-head').forEach(head => {
+      head.addEventListener('click', () => {
+        const body = head.parentElement.querySelector('.accordion-body');
+        if (!body) return;
+        if (body.style.display === 'block') { body.style.display = 'none'; }
+        else { body.style.display = 'block'; }
+      });
+    });
+
+    // preserve nav active state on scroll (simple)
+    const links = document.querySelectorAll('.main-nav .nav-link');
+    const sections = [...document.querySelectorAll('section[id]'), document.getElementById('top')];
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY + 120;
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const h = sec.offsetHeight;
+        if (y >= top && y < top + h) {
+          links.forEach(l => l.classList.remove('active'));
+          const id = sec.id;
+          const link = document.querySelector('.main-nav .nav-link[href="#' + id + '"]');
+          if (link) link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

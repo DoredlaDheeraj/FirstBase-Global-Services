@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Staffing Page</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="sl.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+        <a href="#">
+          <img src="Imgaes/website-logo.jpeg" alt="Firstbase Global Service" height="90px" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+        <ul class="navbar-nav gap-2 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu" aria-labelledby="pagesDrop">
+                    <li><a class="dropdown-item" href="#services">Permanent staffing</a></li>
+                    <li><a class="dropdown-item" href="#services">Contract Staffing</a></li>
+                    <li><a class="dropdown-item" href="#services">Temporary Staffing</a></li>
+                    <li><a class="dropdown-item" href="#services">IT Staffing</a></li>
+                    <li><a class="dropdown-item" href="#services">Healthcare Staffing</a></li>
+                    <li><a class="dropdown-item" href="#services">Retail Staffing</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item d-none d-lg-block"><a class="btn btn-outline-secondary" href="#contact">Hire me</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+
+  <!-- Main carousel (Home) -->
+  <section id="top" class="page-section">
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h3>Find the <em>right talent</em> for your business &amp; build a <em>strong team</em></h3>
+                  <div class="div-dec"></div>
+                  <p>Our Staffing solutions help companies hire permanent, contract, and temporary employees efficiently and effectively.</p>
+                  <div class="mt-3">
+                    <span class="green-button me-2"><a href="#our-services" class="text-white text-decoration-none">Discover More</a></span>
+                    <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+                  </div>
+                </div>
+              </div>                      
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h3>Hire <em>top talent</em> quickly &amp; reduce <em>recruitment challenges</em></h3>
+                  <div class="div-dec"></div>
+                  <p>We specialize in finding the right candidates for every role, helping businesses scale their teams efficiently.</p>
+                  <div class="mt-3">
+                    <span class="green-button me-2"><a href="#services" class="text-white text-decoration-none">Discover More</a></span>
+                    <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h3>Your <em>Staffing Partner</em> for Growth &amp; <em>Business Success</em></h3>
+                  <div class="div-dec"></div>
+                  <p>From sourcing candidates to managing recruitment processes, we deliver end-to-end staffing solutions that drive results.</p>
+                  <div class="mt-3">
+                    <span class="green-button me-2"><a href="#about" class="text-white text-decoration-none">Discover More</a></span>
+                    <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">          
+            <img src="Imgaes/ps1.jpeg" alt="Permanent Staffing">
+            <h4>Permanent Staffing</h4>
+            <p>Hire full-time employees for long-term roles. We ensure you get the right talent to grow your business efficiently.</p>
+            <a href="#permanent" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item"> 
+            <img src="Imgaes/contract Staffing.jpeg" alt="Contract Staffing">           
+            <h4>Contract Staffing</h4>
+            <p>Provide skilled professionals on a contract basis for short-term projects or seasonal work, reducing hiring overhead.</p>
+            <a href="#contract" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/Temporary Staffing.jpeg" alt="Temporary Staffing">
+            <h4>Temporary Staffing</h4>
+            <p>Quickly fill temporary positions with qualified staff to handle peak workloads or special assignments.</p>
+            <a href="#temporary" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/IT Staffing.jpeg" alt="IT Staffing">
+            <h4>IT Staffing</h4>
+            <p>Recruit experienced IT professionals for development, support, and technical projects across multiple domains.</p>
+            <a href="#it-staffing" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/Healthcare Staffing.jpeg" alt="Health Staffing">
+            <h4>Healthcare Staffing</h4>
+            <p>Connect hospitals and healthcare facilities with qualified medical staff, nurses, and support personnel.</p>
+            <a href="#healthcare" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <img src="Imgaes/Retail Staffing.jpeg" alt="Retail Staffing">
+            <h4>Retail Staffing</h4>
+            <p>Provide trained retail staff for stores, customer service, and sales teams to enhance your business operations.</p>
+            <a href="#retail" class="btn btn-accent mt-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simple CTA -->
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <h4>Expert <em>Staffing Solutions</em> for <strong>Your Business</strong></h4>
+        </div>
+        <div class="col-lg-7 text-lg-end">
+          <div class="buttons">
+            <span class="green-button me-2"><a href="#our-services" class="text-white text-decoration-none">Discover More</a></span>
+            <span class="orange-button"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="page-section py-5 bg-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Left Content -->
+      <div class="col-lg-8">
+        <div class="section-heading mb-4">
+          <h6 class="text-uppercase text-muted">About Us</h6>
+          <h4 class="fw-bold">Empowering Your Workforce</h4>
+        </div>
+
+        <div class="naccs">
+          <!-- Tabs -->
+          <div class="menu d-flex flex-wrap gap-2 mb-3" id="aboutTabs">
+            <div class="gradient-border active px-3 py-2 rounded" data-tab="tab1">
+              <span>Permanent Staffing</span>
+            </div>
+            <div class="gradient-border px-3 py-2 rounded" data-tab="tab2">
+              <span>Contract Staffing</span>
+            </div>
+            <div class="gradient-border px-3 py-2 rounded" data-tab="tab3">
+              <span>Temporary Staffing</span>
+            </div>
+          </div>
+
+          <!-- Tab Content -->
+          <ul class="nacc list-unstyled" id="aboutContent">
+            
+            <!-- Permanent Staffing -->
+            <li id="tab1" class="tab-pane">
+              <!-- Header row (desktop only) -->
+              <div class="main-list d-none d-md-flex justify-content-between fw-bold border-bottom pb-2 mb-2">
+                <span>Position</span>
+                <span>Budget</span>
+                <span>Deadline</span>
+                <span>Client</span>
+              </div>
+
+              <!-- Item -->
+              <div class="list-item border-bottom py-3">
+                <div class="d-flex justify-content-between d-none d-md-flex">
+                  <span>Software Engineer</span>
+                  <span>$1,200/month</span>
+                  <span>2025 Oct 15</span>
+                  <span>Tech Innovators</span>
+                </div>
+                <!-- Mobile stacked view -->
+                <div class="d-block d-md-none small">
+                  <p class="mb-1"><strong>Position:</strong> Software Engineer</p>
+                  <p class="mb-1"><strong>Budget:</strong> $1,200/month</p>
+                  <p class="mb-1"><strong>Deadline:</strong> 2025 Oct 15</p>
+                  <p class="mb-0"><strong>Client:</strong> Tech Innovators</p>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="list-item border-bottom py-3">
+                <div class="d-flex justify-content-between d-none d-md-flex">
+                  <span>HR Manager</span>
+                  <span>$1,000/month</span>
+                  <span>2025 Oct 10</span>
+                  <span>PeopleFirst</span>
+                </div>
+                <!-- Mobile stacked view -->
+                <div class="d-block d-md-none small">
+                  <p class="mb-1"><strong>Position:</strong> HR Manager</p>
+                  <p class="mb-1"><strong>Budget:</strong> $1,000/month</p>
+                  <p class="mb-1"><strong>Deadline:</strong> 2025 Oct 10</p>
+                  <p class="mb-0"><strong>Client:</strong> PeopleFirst</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Contract Staffing -->
+            <li id="tab2" class="tab-pane d-none">
+              <div class="main-list d-none d-md-flex justify-content-between fw-bold border-bottom pb-2 mb-2">
+                <span>Position</span>
+                <span>Budget</span>
+                <span>Deadline</span>
+                <span>Client</span>
+              </div>
+
+              <div class="list-item py-3">
+                <div class="d-flex justify-content-between d-none d-md-flex">
+                  <span>Project Manager</span>
+                  <span>$1,500/month</span>
+                  <span>2025 Oct 20</span>
+                  <span>BuildRight</span>
+                </div>
+                <div class="d-block d-md-none small">
+                  <p class="mb-1"><strong>Position:</strong> Project Manager</p>
+                  <p class="mb-1"><strong>Budget:</strong> $1,500/month</p>
+                  <p class="mb-1"><strong>Deadline:</strong> 2025 Oct 20</p>
+                  <p class="mb-0"><strong>Client:</strong> BuildRight</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Temporary Staffing -->
+            <li id="tab3" class="tab-pane d-none">
+              <div class="main-list d-none d-md-flex justify-content-between fw-bold border-bottom pb-2 mb-2">
+                <span>Position</span>
+                <span>Budget</span>
+                <span>Estimated</span>
+                <span>Technology</span>
+              </div>
+
+              <div class="list-item py-3">
+                <div class="d-flex justify-content-between d-none d-md-flex">
+                  <span>Data Analyst</span>
+                  <span>$800/month</span>
+                  <span>2025 Oct 18</span>
+                  <span>DataWorks</span>
+                </div>
+                <div class="d-block d-md-none small">
+                  <p class="mb-1"><strong>Position:</strong> Data Analyst</p>
+                  <p class="mb-1"><strong>Budget:</strong> $800/month</p>
+                  <p class="mb-1"><strong>Estimated:</strong> 2025 Oct 18</p>
+                  <p class="mb-0"><strong>Technology:</strong> DataWorks</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-4">
+        <div class="right-content p-4 bg-white rounded shadow-sm h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h4 class="fw-bold mb-3">Partner with Us for Your Staffing Needs</h4>
+            <p class="text-muted">
+              We specialize in providing tailored staffing solutions to meet the unique needs of your business. Whether you're looking for permanent, contract, or temporary staff, we connect you with top talent to drive your success.
+            </p>
+          </div>
+          <div>
+            <a href="#contact" class="btn btn-success w-100">Discover More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <!-- Our Services (detailed) -->
+  <section id="our-services" class="page-section py-5 bg-light">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="fw-bold">Our Capabilities</h2>
+        <div class="div-dec mx-auto my-3"></div>
+      </div>
+    </div>
+
+    <!-- Service 1 -->
+    <div class="service-item mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h4 class="fw-bold mb-3">Comprehensive Talent Pool</h4>
+          <p class="text-muted">
+            Staffing agencies maintain extensive databases of pre-screened candidates across various industries, ensuring quick access to qualified talent.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-item mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h4 class="fw-bold mb-3">Flexible Staffing Solutions</h4>
+          <p class="text-muted">
+            Offering temporary, contract-to-hire, and permanent placements, staffing services provide businesses with the flexibility to adapt to changing workforce needs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-item mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h4 class="fw-bold mb-3">Time and Cost Efficiency</h4>
+          <p class="text-muted">
+            Design layouts for exchanges and marketplaces — modular and easy to adapt to your brand.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Calculator-like form -->
+  <section class="page-sectionpy-5 d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="section-heading text-center mb-4">
+            <h6>Your Freedom</h6>
+            <h4>Get a Staffing Service</h4>
+          </div>
+
+          <form id="calculate" onsubmit="event.preventDefault(); alert('Form submitted (demo).');">
+            <div class="mb-2">
+              <label for="cName" class="form-label">Your Name</label>
+              <input id="cName" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label for="cEmail" class="form-label">Your Email</label>
+              <input id="cEmail" class="form-control" type="email" required>
+            </div>
+            <div class="mb-2">
+              <label for="cSubject" class="form-label">Subject</label>
+              <input id="cSubject" class="form-control">
+            </div>
+            <div class="mb-2">
+              <label for="chooseOption" class="form-label">Your Reason</label>
+              <select id="chooseOption" class="form-select">
+                <option>Choose an Option</option>
+                <option>Permanent Staffing</option>
+                <option>Contract Staffing</option>
+                <option>Temporary Staffing</option>
+                <option>IT Staffing</option>
+                <option>Healthcare Staffing</option>
+                <option>Retail Staffing</option>
+              </select>
+            </div>
+            <button class="orange-button mt-2" type="submit">Submit Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 text-center mb-4">
+          <h6>Testimonials</h6>
+          <h4>What They Say</h4>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="d-flex gap-3 flex-column flex-md-row">
+            <div class="owl-testimonials item p-3">
+              <i class="fa fa-quote-left fa-2x mb-2 text-muted"></i>
+              <p>“The staffing team provided us with highly skilled candidates in record time. Their understanding of our industry needs made the hiring process seamless.”</p>
+              <h5 class="mb-0">David Sharma</h5>
+              <small class="text-muted">HR Manager, TechNova Pvt. Ltd.</small>
+            </div>
+
+            <div class="owl-testimonials item p-3">
+              <i class="fa fa-quote-left fa-2x mb-2 text-muted"></i>
+              <p>“Thanks to their contract staffing services, we were able to scale our workforce quickly during peak season without any hassle.”</p>
+              <h5 class="mb-0">Anita Verma</h5>
+              <small class="text-muted">Operations Head, RetailMax</small>
+            </div>
+
+            <div class="owl-testimonials item p-3">
+              <i class="fa fa-quote-left fa-2x mb-2 text-muted"></i>
+              <p>“Their recruitment support saved us weeks of effort. We now rely on them for all our permanent and temporary staffing requirements.”</p>
+              <h5 class="mb-0">Rajesh Nair</h5>
+              <small class="text-muted">CEO, HealthCare Plus</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h2>Contact Us</h2>
+          <div class="div-dec" style="margin:0.5rem auto"></div>
+        </div>
+
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="info-item p-3 bg-white rounded">
+                <i class="fa fa-envelope fa-lg text-muted"></i>
+                <h5 class="mt-2">Email Address</h5>
+                <a href="mailto:info@company.com">info@firstbaseglobalservice.com</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-item p-3 bg-white rounded">
+                <i class="fa fa-phone fa-lg text-muted"></i>
+                <h5 class="mt-2">Phone Number</h5>
+                <a href="tel:6281815623">6281815623</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-item p-3 bg-white rounded">
+                <i class="fa fa-map-marked-alt fa-lg text-muted"></i>
+                <h5 class="mt-2">Address</h5>
+                <span>Plot no 486/B, opposite sbi bank, 9th Phase, K P H B Phase 9, Kukatpally, Hyderabad, Telangana 500072</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-us-form mt-4 p-4 bg-white rounded">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3 text-center mb-3">
+                <h4>Feel free to message us</h4>
+              </div>
+
+              <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent (demo)');" class="row">
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Your Name..." required></div>
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Your Phone..." required></div>
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Your E-mail..." type="email" required></div>
+                <div class="col-lg-6 mb-2"><input class="form-control" placeholder="Subject..."></div>
+                <div class="col-12 mb-2"><textarea class="form-control" placeholder="Your Message"></textarea></div>
+                <div class="col-12 text-center"><button class="orange-button" type="submit">Send Message</button></div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>© <span id="year"></span> Firstbase Global Service — Employment Services and Software Development</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + dependencies (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle?.addEventListener('click', () => {
+      if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+        mobileNav.style.display = 'block';
+      } else {
+        mobileNav.style.display = 'none';
+      }
+    });
+
+    // Simple about tabs switching (works without third-party)
+    document.querySelectorAll('#aboutTabs .gradient-border').forEach(tab => {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('#aboutTabs .gradient-border').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        document.querySelectorAll('#aboutContent li').forEach(c => c.classList.add('d-none'));
+        document.getElementById(this.getAttribute('data-tab')).classList.remove('d-none');
+      });
+    });
+
+    // Minimal accordion behavior for any .accordion-card used
+    document.querySelectorAll('.accordion-card .accordion-head').forEach(head => {
+      head.addEventListener('click', () => {
+        const body = head.parentElement.querySelector('.accordion-body');
+        if (!body) return;
+        if (body.style.display === 'block') { body.style.display = 'none'; }
+        else { body.style.display = 'block'; }
+      });
+    });
+
+    // preserve nav active state on scroll (simple)
+    const links = document.querySelectorAll('.main-nav .nav-link');
+    const sections = [...document.querySelectorAll('section[id]'), document.getElementById('top')];
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY + 120;
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const h = sec.offsetHeight;
+        if (y >= top && y < top + h) {
+          links.forEach(l => l.classList.remove('active'));
+          const id = sec.id;
+          const link = document.querySelector('.main-nav .nav-link[href="#' + id + '"]');
+          if (link) link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+:root{
+    --accent-green:#2ecc71;
+    --accent-orange:#ff8a00;
+    --dark:#222;
+    --muted:#6c757d;
+    --bg:#f7f8fb;
+    font-family: "Poppins", sans-serif;
+}
+
+body { background: var(--bg); color: #222; margin: 0; padding: 0; }
+
+/* Sections - reduce unwanted space */
+.page-section {
+  padding: 2.5rem 0;   /* reduced from 3rem */
+}
+.page-section h2,
+.page-section h4 {
+  margin-bottom: 0.75rem;
+}
+
+/* Header / Navbar */
+.navbar {
+padding: 1rem 0;
+transition: all 0.3s;
+z-index: 1000;
+}
+.navbar-brand {
+font-weight: 700;
+color: var(--dark);
+}
+.nav-link {
+color: var(--muted);
+font-weight: 600;
+}
+.nav-link:hover {
+color: var(--dark);
+}
+
+.menu-trigger { display:none; cursor:pointer; padding: .5rem 1rem; }
+.page-heading { padding: 4rem 0; background: linear-gradient(90deg,#fff 0,#f7f7f9 100%); text-align:center; }
+.page-heading h2 { font-weight:700; margin-bottom:.5rem; }
+
+/* Carousel slide text */
+.header-text h2{ font-weight:700; font-size:32px; }
+.header-text p{ color:var(--muted); }
+
+/* Buttons */
+.green-button a, .green-button { background:var(--accent-green); color:white; padding: .5rem 1rem; border-radius:6px; display:inline-block; text-decoration:none;}
+.orange-button a, .orange-button { background:var(--accent-orange); color:white; padding: .5rem 1rem; border-radius:6px; display:inline-block; text-decoration:none; }
+
+/* Services / features */
+.service-item { background:white; padding:1.5rem; border-radius:10px; box-shadow:0 6px 18px rgba(15,15,15,0.04); margin-bottom:1rem; }
+.service-item i { font-size:28px; color:var(--accent-green); margin-bottom:.5rem; display:block; }
+
+/* Simple CTA */
+.simple-cta { padding:2rem 0; background:linear-gradient(90deg,#fff,#fff); margin-top:1rem; }
+
+/* About / tabs like area */
+.naccs .menu { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:1rem; }
+.gradient-border {
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, #28a745, #20c997) border-box;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.gradient-border.active {
+  background: linear-gradient(90deg, #28a745, #20c997);
+  color: #fff;
+}
+.tab-pane {
+  transition: all 0.3s ease-in-out;
+}
+
+.div-dec {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 2px;
+}
+
+/* Service item hover effect */
+.service-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Service images */
+.service-item img {
+  height: 100px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+.service-item:hover img {
+  transform: scale(1.03);
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item.mb-5 {
+  margin-bottom: 2rem !important; /* tighter spacing */
+}
+
+/* Calculator/contact form */
+.section-heading h6{ color:var(--accent-green); font-weight:600; margin-bottom:.25rem;}
+.section-heading h4{ font-weight:700; }
+
+/* Testimonials */
+.owl-testimonials .item{ background:white; padding:1.25rem; border-radius:8px; box-shadow:0 8px 20px rgba(0,0,0,.04); }
+.owl-testimonials .item p{ color:var(--muted); }
+
+/* Partners grid */
+.partners .item img{ max-width:100%; opacity:.85; filter:grayscale(10%); }
+
+/* Footer */
+footer { padding:2rem 0; text-align:center; color:var(--muted); background:transparent; }
+
+/* Responsive tweaks */
+@media(max-width:991px){
+  .menu-trigger { display:block; }
+  .main-nav .nav { display:none; }
+}
+
+/* Small utilities */
+.left-image img, .right-image img { max-width:100%; border-radius:8px; }
+.page-section { padding: 3rem 0; }
+.map iframe { border-radius:8px; }
+
+/* Accordion simplified */
+.accordion-card { background:white; padding:1rem; border-radius:8px; margin-bottom:.8rem; box-shadow:0 6px 18px rgba(0,0,0,.04); }
+.accordion-head { display:flex; justify-content:space-between; align-items:center; cursor:pointer; }
+.accordion-body { display:none; padding-top:.75rem; color:var(--muted); }
