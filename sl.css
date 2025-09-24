@@ -1,13 +1,28 @@
 :root{
-    --accent-green:#2ecc71;
-    --accent-orange:#ff8a00;
-    --dark:#222;
-    --muted:#6c757d;
-    --bg:#f7f8fb;
-    font-family: "Poppins", sans-serif;
+  --accent-1: #f8b4d9;  /* light pink */
+  --accent-2: #cbb2fe;  /* soft lavender */
+  --accent-3: #ffd6a5;  /* pale apricot */
+  --accent-4: #b5ead7;  /* pastel aqua */
+  --dark:#222;
+  --muted:#6c757d;
+  --bg:#f7f8fb;
 }
 
-body { background: var(--bg); color: #222; margin: 0; padding: 0; }
+html,body{
+  height: 100%;
+}
+
+body { 
+  font-family: "Poppins", sans-serif;
+  color: var(--dark); 
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.bgcolor{
+  background: linear-gradient(135deg,var(--accent-2),var(--accent-3));
+}
 
 /* Sections - reduce unwanted space */
 .page-section {
@@ -45,15 +60,15 @@ color: var(--dark);
 .header-text p{ color:var(--muted); }
 
 /* Buttons */
-.green-button a, .green-button { background:var(--accent-green); color:white; padding: .5rem 1rem; border-radius:6px; display:inline-block; text-decoration:none;}
-.orange-button a, .orange-button { background:var(--accent-orange); color:white; padding: .5rem 1rem; border-radius:6px; display:inline-block; text-decoration:none; }
+.green-button a, .green-button { background:var(--accent-3); color:#333; padding: .5rem 1rem; border-radius:6px; display:inline-block; text-decoration:none;}
+.orange-button a, .orange-button { background:var(--accent-4); color:#333; padding: .5rem 1rem; border-radius:6px; display:inline-block; text-decoration:none; }
 
 /* Services / features */
 .service-item { background:white; padding:1.5rem; border-radius:10px; box-shadow:0 6px 18px rgba(15,15,15,0.04); margin-bottom:1rem; }
-.service-item i { font-size:28px; color:var(--accent-green); margin-bottom:.5rem; display:block; }
+.service-item i { font-size:28px; color:var(--accent-1); margin-bottom:.5rem; display:block; }
 
 /* Simple CTA */
-.simple-cta { padding:2rem 0; background:linear-gradient(90deg,#fff,#fff); margin-top:1rem; }
+.simple-cta { padding:2rem 0; margin-top:1rem; }
 
 /* About / tabs like area */
 .naccs .menu { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:1rem; }
@@ -121,7 +136,7 @@ color: var(--dark);
 footer { padding:2rem 0; text-align:center; color:var(--muted); background:transparent; }
 
 /* Responsive tweaks */
-@media(max-width:991px){
+@media(max-width:1040px){
   .menu-trigger { display:block; }
   .main-nav .nav { display:none; }
 }
