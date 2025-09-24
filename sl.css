@@ -101,6 +101,25 @@ color: var(--dark);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 /* Service images */
+
+.logistics .Service-item{
+  width: 290px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+  border: 15px solid green;
+}
+.logistics .Service-item img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.logistics .Service-item:hover img {
+  transform: scale(1.03);
+}
+
+.logistics .Service-item:hover {
+  transform: translateY(-5px);
+}
 .service-item img {
   height: 100px;
   max-height: 180px;
@@ -137,6 +156,16 @@ footer { padding:2rem 0; text-align:center; color:var(--muted); background:trans
 
 /* Responsive tweaks */
 @media(max-width:1040px){
+  .logistics .staffing-bottom-section .d-flex {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .Service-item {
+    width: 90%;
+    margin: 10px 0;
+    align-items: center;
+  }
   .menu-trigger { display:block; }
   .main-nav .nav { display:none; }
 }
