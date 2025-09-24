@@ -1,18 +1,23 @@
 :root{
-    --accent-1:#55c57a;   /* green */
-    --accent-2:#7b61ff;   /* purple */
-    --dark:#111827;
-    --muted:#6b7280;
-    --bg:#f7fafc;
+  --accent-1: #3b82f6;   /* bright sky blue */
+  --accent-2: #fcd34d;   /* champagne gold */
+  --accent-3: #8b5cf6;   /* violet purple */
+  --accent-4: #10b981;   /* emerald green */
+  --dark:#111827;
+  --muted:#6b7280;
+  --bg:linear-gradient(180deg, var(--accent-2), var(--accent-1));
 }
 html,body{height:100%;}
 body{
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   color:var(--dark);
-  background: #fff;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.5;
+}
+
+.bgcolor{
+  background: linear-gradient(135deg,var(--accent-1),var(--accent-2));
 }
 
 /* Header / Navbar */
@@ -33,11 +38,12 @@ body{
   background: linear-gradient(90deg, rgba(123,97,255,0.06) 0%, rgba(85,197,122,0.04) 100%);
   padding: 4rem 0;
 }
+
 .hero .lead {
   font-size:1rem;
   letter-spacing:0.02em;
-  color:var(--muted);
 }
+
 .hero h1{
   font-size: clamp(2rem, 4.2vw, 3.25rem);
   margin-top:.35rem;
@@ -47,7 +53,17 @@ body{
 .hero p{max-width:56ch; color:var(--muted);}
 
 .btn-accent {
-  background: linear-gradient(90deg,var(--accent-1),var(--accent-2));
+  background: linear-gradient(135deg,var(--accent-1),var(--accent-2));
+  color:#fff;
+  border:0;
+  padding: .6rem 1.1rem;
+  border-radius: .6rem;
+  font-weight:600;
+  box-shadow: 0 6px 18px rgba(123,97,255,0.08);
+}
+
+.btn-accent1 {
+  background: linear-gradient(135deg,var(--accent-3),var(--accent-4));
   color:#fff;
   border:0;
   padding: .6rem 1.1rem;
@@ -57,9 +73,14 @@ body{
 }
 
 /* Services / Cards */
+.services {
+  color: #fff;
+  padding: 4rem 0;
+}
 .services .card {
   border: 0;
   background: #fff;
+  color: #333;
   box-shadow: 0 6px 22px rgba(16,24,40,0.04);
   border-radius: .85rem;
   padding: 1.25rem;
@@ -103,7 +124,6 @@ body{
 }
 .progress .bar {
   height:100%;
-  background: linear-gradient(90deg,var(--accent-1),var(--accent-2));
 }
 
 /* Contact */
@@ -118,7 +138,7 @@ body{
 footer { padding:2rem 0; color:var(--muted); font-size:.95rem; }
 
 /* Responsive tweaks */
-@media (max-width: 767px){
+@media (max-width: 1040px){
   .hero { padding: 2.5rem 0; min-height:72vh; }
   .projects .project img { height:180px; }
   .hero p{ font-size:.98rem; }
@@ -128,7 +148,6 @@ footer { padding:2rem 0; color:var(--muted); font-size:.95rem; }
 .badge-accent {
   padding:.35rem .5rem;
   border-radius:999px;
-  background: linear-gradient(90deg,var(--accent-1),var(--accent-2));
   color:#fff;
   font-weight:700;
   font-size:.8rem;
